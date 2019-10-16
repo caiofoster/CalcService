@@ -8,6 +8,6 @@ public class ServicoCalcApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ServicoCalcApplication.class, args);
-	}
+	} 
 
 }
