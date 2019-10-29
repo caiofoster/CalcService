@@ -1,0 +1,17 @@
+server:
+   port: 8080
+
+management:
+   endpoint:
+      health:
+         show-details: always
+      web:
+         exposure:
+            include: "*"
+spring:
+   application: 
+      name: calc
+   cloud:
+       consul:
+          discovery:
+             instanceId: ${spring.application.name}:${random.value}
